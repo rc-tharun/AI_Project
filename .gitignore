@@ -17,9 +17,9 @@ id_bank.npy
 # Local notebook checkpoints
 .ipynb_checkpoints/
 
-# Generated presentation outputs (regenerated locally, not tracked)
-outputs/
+# Slide-render staging + auto-generated presentation outputs (recreated locally, not tracked)
 tmp/
+outputs/
 
 # IDE
 .idea/
