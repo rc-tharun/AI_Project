@@ -17,6 +17,10 @@ id_bank.npy
 # Local notebook checkpoints
 .ipynb_checkpoints/
 
+# Generated presentation outputs (regenerated locally, not tracked)
+outputs/
+tmp/
+
 # IDE
 .idea/
 .vscode/
