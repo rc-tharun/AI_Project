@@ -4,27 +4,51 @@ Camera-based safety gate for autonomous driving. For every front-camera frame th
 
 Course final-project repository covering the full experimental study — six method families compared on BDD100K weather classification — and a runnable demo of the recommended pipeline.
 
-> **Members:** Tharun Reddy Challabotla · HariChandana Srikurmum · Srija
+> **Members:** Tharun Reddy Challabotla · HariChandana Srikurmum · Srija Pentyala
 
 ---
 
 ## Repository layout
 
-| Path | What it contains |
-|---|---|
-| `app.py` | Gradio web demo of the safety gate (zero-shot CLIP + trained ResNet-50 fusion). |
-| `build_index.py` | Builds the kNN reference set + tunes thresholds from cached CLIP features (used by the original kNN gate variant). |
-| `demo_thresholds.json` | Persisted gate config (k, thresholds, validation metrics). |
-| `ResNet50/AI_RESNET.ipynb` | ResNet-50 baseline + calibration (MSP, energy, dropout, ensemble entropy, temperature scaling). |
-| `Deep_Ensemble/Deep_Ensemble.ipynb` | Deep ensemble experiments. |
-| `SVDD/Deep_Ensemble_(2).ipynb` | One-class Deep SVDD baseline. |
-| `Vit+knn/Deep_Ensemble_(1).ipynb` | CLIP ViT-B/32 features + FAISS kNN OOD detector — strongest explicit OOD detector in the study. |
-| `vit_l_14/Deep_Ensemble_(1).ipynb` | Same approach with CLIP ViT-L/14 backbone. |
-| `results of vit/Deep_Ensemble_Mahalanobis.ipynb` | Mahalanobis distance OOD detector on CLIP features. |
-| `results of vit/VIT_BACKBONE.ipynb` | Supervised backbone sweep (ResNet-50, EfficientNet-B3, ConvNeXt-Tiny, CLIP ViT-B/16). |
-| `results of vit/train_safety_gate.py` + `submit_grace.sh` | Cluster training scripts (Texas A&M HPRC Grace). |
-| `outputs/final_project_presentation*/` | Generated narrative and final slide decks. |
-| `ODD-OOD-Detection-for-Safe-Autonomy.pptx` | Original proposal deck. |
+```
+AI_Project/
+├── app.py                              # Gradio demo: CLIP zero-shot + ResNet-50 → TRUST/SLOW/ABSTAIN gate
+├── build_index.py                      # Builds the kNN reference set + tunes thresholds from cached CLIP features
+├── demo_thresholds.json                # Persisted gate config (k, thresholds, validation metrics)
+├── README.md
+├── .gitignore
+├── ODD-OOD-Detection-for-Safe-Autonomy.pptx   # Original proposal deck
+│
+├── ResNet50/
+│   ├── AI_RESNET.ipynb                 # ResNet-50 baseline + calibration (MSP, energy, dropout, ensemble entropy, temperature scaling)
+│   ├── method_comparison.png
+│   ├── reliability_diagram.png
+│   ├── risk_coverage.png
+│   ├── roc_curves.png
+│   ├── score_distribution.png
+│   └── training_curves.png
+│
+├── Deep_Ensemble/
+│   └── Deep_Ensemble.ipynb             # Deep ensemble experiments
+│
+├── SVDD/
+│   └── Deep_Ensemble_(2).ipynb         # One-class Deep SVDD baseline
+│
+├── Vit+knn/
+│   └── Deep_Ensemble_(1).ipynb         # CLIP ViT-B/32 features + FAISS kNN OOD detector (strongest explicit OOD detector)
+│
+├── vit_l_14/
+│   └── Deep_Ensemble_(1).ipynb         # Same approach with CLIP ViT-L/14 backbone
+│
+└── results of vit/
+    ├── Deep_Ensemble_Mahalanobis.ipynb # Mahalanobis distance OOD detector on CLIP features
+    ├── VIT_BACKBONE.ipynb              # Supervised backbone sweep (ResNet-50, EfficientNet-B3, ConvNeXt-Tiny, CLIP ViT-B/16)
+    ├── train_safety_gate.py            # Cluster training script (Texas A&M HPRC Grace)
+    ├── submit_grace.sh                 # SLURM submission script
+    └── README_HPRC.md
+```
+
+> Generated slide decks (`outputs/`) and slide-preview snapshots (`tmp/`) are produced by external tooling and excluded from the repo via `.gitignore`.
 
 ### Files **not** in the repo (excluded by `.gitignore`)
 
