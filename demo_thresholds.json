@@ -1,0 +1,18 @@
+{
+  "k": 10,
+  "feature_dim": 512,
+  "id_bank_size": 37344,
+  "trust_threshold": 0.41465047001838684,
+  "abstain_threshold": 0.49704688787460327,
+  "val_auroc": 0.7411832137161084,
+  "val_aupr": 0.4366787645849598,
+  "trust_coverage": 0.18933877075444216,
+  "trust_false_safe_rate": 0.04802631578947368,
+  "val_score_min": 0.238693505525589,
+  "val_score_max": 0.7837181091308594,
+  "val_score_id_median": 0.3736836016178131,
+  "val_score_ood_median": 0.4434093236923218,
+  "threshold_policy": "demo: TRUST<id_p70, ABSTAIN>=id_p95 (calibrated for showcase, not for deployment)",
+  "trust_id_pass_rate": 0.6999625888514778,
+  "abstain_ood_catch_rate": 0.21052631578947367
+}

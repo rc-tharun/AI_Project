@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Trained model weights (host externally; too large for git)
+*.pth
+
+# Cached feature tensors (re-extract via notebook cells)
+*.pt
+id_bank.npy
+
+# Local notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE
+.idea/
+.vscode/
