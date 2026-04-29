@@ -21,6 +21,11 @@ id_bank.npy
 tmp/
 outputs/
 
-# IDE
+# IDE / tooling
 .idea/
 .vscode/
+.claude/
+
+# Local recordings of demo sessions (uploaded to YouTube; not for the repo)
+Test Pictures/*Zoom Meeting*/
+Test Pictures/*.mp4
