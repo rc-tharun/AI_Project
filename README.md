@@ -16,8 +16,7 @@ This repository contains the full course final-project study — six method fami
 |---|---|
 | [`AI_Report_team6.pdf`](AI_Report_team6.pdf) | Final project report (problem framing, methods, results, discussion). |
 | [`Presentation.pdf`](Presentation.pdf) | Final presentation slides (PDF export of the deck). |
-| [`ODD-OOD-Detection-for-Safe-Autonomy.pptx`](ODD-OOD-Detection-for-Safe-Autonomy.pptx) | Original proposal deck. |
-| [▶ Demo video on YouTube](https://www.youtube.com/watch?v=IZp4Fr6XExs) | ~3-minute walkthrough of the running web app on real driving frames. |
+| [▶ Demo video on YouTube](https://www.youtube.com/watch?v=IZp4Fr6XExs) | Walkthrough of the running web app on real driving frames. |
 
 ---
 
@@ -158,7 +157,6 @@ AI_Project/
 ├── .gitignore
 ├── AI_Report_team6.pdf                        # Final project report
 ├── Presentation.pdf                           # Final presentation slides (PDF export)
-├── ODD-OOD-Detection-for-Safe-Autonomy.pptx   # Original proposal deck
 │
 ├── ResNet50/
 │   ├── AI_RESNET.ipynb                 # ResNet-50 baseline + calibration (MSP, energy, dropout, ensemble entropy, T-scaling)
