@@ -17,6 +17,7 @@ This repository contains the full course final-project study — six method fami
 | [`AI_Report_team6.pdf`](AI_Report_team6.pdf) | Final project report (problem framing, methods, results, discussion). |
 | [`Presentation.pdf`](Presentation.pdf) | Final presentation slides (PDF export of the deck). |
 | [▶ Demo video on YouTube](https://www.youtube.com/watch?v=IZp4Fr6XExs) | Walkthrough of the running web app on real driving frames. |
+| [📝 Project blog](https://steady-empanada-75ac04.netlify.app/) | Companion write-up of the project journey, methods, and findings. |
 
 ---
 
